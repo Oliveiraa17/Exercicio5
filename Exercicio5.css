@@ -1,0 +1,99 @@
+body {
+    margin: 0;
+    padding: 0;
+    display: grid;
+    grid-template-areas:
+        "header header header"
+        "nav section aside"
+        "footer footer footer";
+    grid-template-columns: 1fr 3fr 1fr;
+    grid-template-rows: auto 1fr auto;
+    height: 100vh;
+}
+
+header {
+    grid-area: header;
+    background-color: black;
+    color: white;
+    text-align: center;
+    padding: 10px;
+}
+h1{
+    grid-area: nav;
+    background-color: rgb(229, 230, 233);
+    color: white;
+    text-align: center;
+    float: left;
+    height: auto;
+    margin-top: 5px;
+    margin-bottom: 0%;
+}
+nav {
+    grid-area: nav;
+    background-color: rgb(4, 65, 248);
+    color: rgb(255, 255, 255);
+    padding: 05px;
+    width: 100%;
+    height:10px;
+    position: absolute;
+    margin-top: 30px;
+   
+}
+
+section {
+    grid-area: section;
+    background-color: lightpink;
+    color: black;
+    padding: 10px;
+    color: rgb(255, 255, 255);
+    
+}
+
+section header {
+    background-color: rgb(253, 252, 252);
+    color: black;
+    padding: 10px;
+    text-align: center;
+}
+
+.main-content {
+    background-color: brown;
+    margin: 10px 0;
+    padding: 20px;
+}
+
+p {
+    background-color: lightblue;
+    padding: 90px;
+    text-align: left;
+    position: relative;
+}
+
+.sub-content {
+    display: flex;
+    gap: 10px;
+}
+
+.sub-content > div {
+    flex: 1;
+    background-color: gray;
+    padding: 90px;
+    text-align: center;
+}
+
+aside {
+    grid-area: aside;
+    background-color: rgb(167, 62, 114);
+    color: white;
+    text-align: center;
+    padding: 20px;
+
+}
+
+footer {
+    grid-area: footer;
+    background-color: black;
+    color: white;
+    text-align: center;
+    padding: 10px;
+}
